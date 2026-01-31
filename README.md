@@ -1,64 +1,65 @@
-# Unsupervised-Discovery-of-Musical-Mood-Archetypes-Using-Spotify-Audio-Features
+# AI & Machine Learning Pipeline – Spotify Dataset (114K+ Tracks)
 
-# AI & Machine Learning Pipeline – Spotify Dataset
+This project implements a full Machine Learning pipeline using a large-scale real-world Spotify dataset with over 114,000 tracks. The objective is to demonstrate rigorous data exploration, preprocessing, model comparison, and evaluation using empirical results rather than theoretical discussion.
 
-This project implements a complete Machine Learning pipeline on a real-world Spotify dataset from Kaggle, following academic requirements for data-driven experimentation and model comparison.
-
-The goal is to demonstrate end-to-end understanding of data exploration, preprocessing, model selection, training, evaluation, and interpretation using actual experimental results.
+The project follows formal academic ML requirements and emphasizes experimental justification at every stage.
 
 ## Dataset
 - **Source:** Spotify Tracks Dataset (Kaggle)
-- **Samples:** 1,000+ tracks
-- **Characteristics:** noisy features, outliers, skewed distributions, and feature scale imbalance
-- **License:** As provided on Kaggle (dataset linked, not redistributed)
+- **Size:** 114,000+ audio tracks
+- **Features:** numerical audio features such as energy, valence, tempo, loudness, danceability, etc.
+- **Challenges:** scale imbalance, skewed distributions, outliers, and real-world noise
+- **License:** As provided on Kaggle  
+  (dataset is referenced, not redistributed)
 
-The dataset is suitable for machine learning due to its numerical audio features (e.g. energy, valence, tempo, loudness) and real-world variability.
+The dataset is well-suited for machine learning due to its size, feature diversity, and non-ideal real-world structure.
 
 ## Problem Definition
-- **Task:** Machine Learning (classification / clustering / regression)
-- **Objective:** Learn patterns in audio features and evaluate model performance under different preprocessing and modeling choices
-- **Evaluation focus:** model performance, robustness, and trade-offs between simplicity and complexity
+- **Task Type:** Machine Learning (classification / clustering / regression)
+- **Objective:** Analyze and model relationships between Spotify audio features and evaluate how preprocessing and model complexity affect performance
+- **Evaluation Focus:** predictive performance, robustness, and trade-offs between baseline and advanced models
 
 ## Methodology
 ### 1. Exploratory Data Analysis (EDA)
 - Dataset shape and feature inspection
 - Summary statistics
 - Missing value analysis
-- Distribution plots (histograms, boxplots)
+- Distribution analysis (histograms, boxplots)
 - Outlier detection
 - Feature relationship visualization
 
 ### 2. Data Preprocessing
-- Missing value handling
+- Handling missing values
 - Feature encoding (where applicable)
 - Feature scaling (with and without scaling)
 - Multiple preprocessing strategies tested and compared
-- Justification for all preprocessing decisions
+- Explicit justification for all preprocessing decisions
 
 ### 3. Baseline Model
-- Simple model used as a performance reference
-- Training and evaluation using standard metrics
-- Interpretation of baseline results
+- Simple reference model used as a baseline
+- Training and evaluation using appropriate metrics
+- Interpretation of baseline performance
 
 ### 4. Advanced Model
 - More complex model with hyperparameter tuning
-- Performance comparison against baseline
-- Discussion of model complexity vs. performance gains
+- Performance comparison against the baseline model
+- Analysis of increased model complexity
 
-### 5. Evaluation & Comparison
-- Quantitative metrics
-- Tables and plots for comparison
-- Analysis of improvements and limitations
+### 5. Evaluation & Results Comparison
+- Quantitative performance metrics
+- Tables and plots comparing models
+- Experimental demonstration of preprocessing and scaling impact
+- Discussion of performance gains and limitations
 
-## Results
-- Clear performance comparison between baseline and advanced models
-- Experimental evidence of preprocessing and scaling impact
-- Discussion of strengths, weaknesses, and limitations
+## Results & Discussion
+- Clear comparison between baseline and advanced models
+- Empirical evidence supporting model and preprocessing choices
+- Identification of limitations and potential improvements
 
 ## Deliverables
-- Executed Jupyter Notebook with visible outputs
-- Reproducible code
-- Clear experimental structure aligned with ML best practices
+- Fully executed Jupyter Notebook with visible outputs
+- Reproducible experimental pipeline
+- Clear structure aligned with machine learning best practices
 
 ## Tools & Technologies
 - Python
